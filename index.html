@@ -41,7 +41,7 @@ const chain=(p,a,end)=>{a.forEach((q,i)=>{N[p+i]={t:'s',q,n:i<a.length-1?p+(i+1)
 const ch=(id,q,o)=>{N[id]={t:'c',q,o};return id};
 N.END={t:'e'};
 const junk="First have the customer check junk/spam",bl="Check if the sender is blocklisted",test="Try sending a test email",
-bb="Check for bouncebacks (some bouncebacks are understandable)",
+bb="Check for bouncebacks (Analyze Bounceback)",
 eml="If no bounceback: download the sent email from the sentbox as an EML file and include it in your escalation",
 pop="Check mail client connections (POP3 is one to look out for, but IMAP should be noted as well)",
 dns="Check DNS Records and make sure they are correct",
