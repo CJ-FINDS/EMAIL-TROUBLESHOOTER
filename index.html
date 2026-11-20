@@ -56,7 +56,7 @@ ch('oxcQ',qs,[['Specific sender',oxcS],['Not receiving all emails',oxcA]]);
 const oxc=chain('oxc',["Verify permissions are turned on in CMC and Storage",dns],'oxcQ');
 /* OX */
 const oxS=chain('oxs',[junk,"Check Filter Rules and Storage",bl,test,bb,eml],'END');
-const oxA=chain('oxa',["Check Filter Rules and Storage in PCP","Check Mailhub for possible suspension",pop,test,bb,eml],'END');
+const oxA=chain('oxa',["Check Filter Rules and Storage through PCP","Check Mailhub for possible suspension",pop,test,bb,eml],'END');
 ch('oxQ',qs,[['Specific sender',oxS],['Not receiving all emails',oxA]]);
 const ox=chain('ox',[dns],'oxQ');
 /* VDECK */
